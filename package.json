@@ -1,0 +1,23 @@
+{
+  "name": "chatgpt-wechatmp-bot",
+  "version": "1.0.0",
+  "description": "WeChat Official Account bot powered by ChatGPT.",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "start:wechatmp": "cross-env WECHATY_LOG=verbose WECHATY_PUPPET=wechaty-puppet-official-account npm start"
+  },
+  "dependencies": {
+    "chatgpt": "^5.1.2",
+    "dotenv": "^16.0.0",
+    "wechaty": "^1.18.1",
+    "wechaty-puppet-official-account": "^1.10.7"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "prettier": "^2.8.7",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2"
+  }
+}
